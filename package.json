@@ -1,0 +1,36 @@
+{
+  "name": "TinyMusic",
+  "version": "0.0.1",
+  "description": "A simple, lightweight music sequencer in JavaScript using the Web Audio API.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kevincennis/TinyMusic.git"
+  },
+  "keywords": [
+    "Music",
+    "JavaScript",
+    "Sequencer",
+    "Web",
+    "Audio",
+    "API"
+  ],
+  "author": "Kevin Ennis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevincennis/TinyMusic/issues"
+  },
+  "homepage": "https://github.com/kevincennis/TinyMusic",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-uglify": "^0.5.1",
+    "load-grunt-tasks": "^0.6.0",
+    "grunt-compare-size": "^0.4.0",
+    "gzip-js": "^0.3.2",
+    "grunt-contrib-concat": "^0.5.0"
+  }
+}
