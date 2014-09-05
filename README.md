@@ -50,7 +50,7 @@ var tempo = 120;
 var sequence = new Sequence( ac, tempo, [
   'G3 q',
   'E4 q',
-  'C4 h
+  'C4 h'
 ]);
 
 // disable looping
