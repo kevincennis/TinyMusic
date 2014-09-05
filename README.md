@@ -66,7 +66,7 @@ sequence.play();
 
 The `Note` constructor only acceps one argument: a string that dictates note frequency and duration. An example input string might look like `'A4 q'`.
 
-In that example, `'A4'` refers to the frequency 440Hz [more on that here](http://www.phy.mtu.edu/~suits/notefreqs.html), and `'q'` means "quarter note".
+In that example, `'A4'` refers to the frequency 440Hz ([more on that here](http://www.phy.mtu.edu/~suits/notefreqs.html)), and `'q'` means "quarter note".
 
 The duration component of the string can follow a few different forms:
 
