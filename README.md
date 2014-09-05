@@ -299,3 +299,23 @@ sequence2.play( when + ( 60 / tempo ) * 16 );
 // start the bass part immediately
 sequence3.play( when );
 ```
+
+## Development
+
+- Install Node.js
+- Run `npm install`
+- Run `grunt`
+
+Voila!
+
+I also have `grunt watch` set up to automatically build when you change a source file.
+
+## Contributing
+
+Go for it. I wrote this in an afternoon, it could *probably* be improved. Pull requests are completely welcome.
+
+## Issues
+
+File 'em. I'm happy to fix bugs or answer questions.
+
+I'm probably not gonna look to add many more features though, since this is really intended to be a very small library (people are using it for [js13k](http://js13kgames.com/), so, I mean...).
