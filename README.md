@@ -10,7 +10,7 @@ Here's a quick, hideous [demo](http://jsbin.com/ramerilibubo/1/edit).
 
 ## Quick Start
 
-Getting started is pretty easy. Creating and playing a sequence only takes a few lines of code.
+Getting started is pretty easy. Creating and playing a melody only takes a few lines of code.
 
 ```js
 // create a new Web Audio API context
