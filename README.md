@@ -85,7 +85,7 @@ The duration component of the string can follow a few different forms:
 After the constructor is run, `Note` instances have two properties:
 
 - `frequency` is a number representing the note's frequency in Hz
-- `duration` is the ratio beat length (always 1) to the note's time value. `1` would be a quarter note, `0.5` a half note, etc.
+- `duration` is the ratio of beat length (always 1) to the note's time value. `1` would be a quarter note, `0.5` a half note, etc.
 
 ### Sequence
 
