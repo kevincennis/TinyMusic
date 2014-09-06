@@ -70,6 +70,8 @@ The `Note` constructor only acceps one argument: a string that dictates note fre
 
 In that example, `'A4'` refers to the frequency 440Hz ([more on that here](http://www.phy.mtu.edu/~suits/notefreqs.html)), and `'q'` means "quarter note".
 
+To create a rest, you can pass in any "note name" that's not valid. I usually use `'-'`. So `'- q'` would be a quarter note rest (or one beat of silence for you non-music-types).
+
 The duration component of the string can follow a few different forms:
 
 - `'w'` is a whole note
@@ -79,7 +81,6 @@ The duration component of the string can follow a few different forms:
 - `'s'` is a sixteenth note
 - `'es'` is a dotted eighth note (eighth plus sixteenth). This works for any combination of the letters above.
 - `'0.0125'` is a 32nd note, but any numeric value will work here. So `'2'` would be a half note, `'0.5'` would be an eighth note, etc.
-- `'-'` is essentially a rest (silence). Any unrecognized character will be treated this way.
 
 After the constructor is run, `Note` instances have two properties:
 
