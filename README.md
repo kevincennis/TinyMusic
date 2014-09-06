@@ -150,7 +150,7 @@ The `waveType` property defines what kind of oscillator the sequence will use. B
 
 #### Sequence.prototype.push()
 
-The `push()` method accepts any Note instances (or "note strings" that can be passed to the `Note` constructor) and adds them to the sequence.
+The `push()` method accepts any number of `Note` instances (or "note strings" that can be passed to the `Note` constructor) and adds them to the sequence.
 
 #### Sequence.prototype.play()
 
