@@ -162,6 +162,8 @@ The `stop()` method stops all playback immediately.
 
 ### Full example
 
+Here's a more elaborate demo that shows how to play multiple sequences in sync, as well as use gain and EQ:
+
 ```js
 // create the audio context
 var ac = new AudioContext(),
