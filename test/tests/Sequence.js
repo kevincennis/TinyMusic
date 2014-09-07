@@ -14,14 +14,14 @@ describe( 'Sequence', function(){
 
   describe( 'push()', function() {
 
-    describe( 'from strings', function() {
+    it( 'should accept strings', function() {
       var fixture = { notes: [] };
       Sequence.prototype.push.call( fixture, 'A4 q', 'A4 h' );
       assert.lengthOf( fixture.notes, 2, 'Notes added' );
       assert.instanceOf( fixture.notes[ 0 ], Note, 'Strings converted to Note instances' );
     });
 
-    describe( 'from Note instances', function() {
+    it( 'should accept Note instances', function() {
       var fixture = { notes: [] },
         note1 = new Note('A4 q'),
         note2 = new Note('A4 h');
