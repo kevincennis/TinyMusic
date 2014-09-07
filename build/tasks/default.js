@@ -1,4 +1,5 @@
 module.exports = [
+  'jscs',
   'concat',
   'uglify',
   'connect',

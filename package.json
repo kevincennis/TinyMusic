@@ -36,6 +36,7 @@
     "chai": "^1.9.1",
     "grunt-contrib-connect": "^0.8.0",
     "grunt-mocha-phantomjs": "^0.6.0",
-    "mocha": "^1.21.4"
+    "mocha": "^1.21.4",
+    "grunt-jscs-checker": "0.4.4"
   }
 }

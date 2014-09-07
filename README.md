@@ -322,7 +322,9 @@ I also have `grunt watch` set up to automatically build when you change a source
 
 ## Contributing
 
-Go for it. I wrote this in an afternoon, it could *probably* be improved. Pull requests are completely welcome.
+Go for it. I wrote this in an afternoon, it could *probably* be improved. Pull
+requests are completely welcome, but please make sure that the test suite
+passes and that you conform to the [Idiomatic.js](https://github.com/rwaldron/idiomatic.js/) style guide.
 
 ## Issues
 

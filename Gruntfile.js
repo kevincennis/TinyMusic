@@ -5,6 +5,8 @@ module.exports = function( grunt ) {
     pkg: grunt.file.readJSON('package.json'),
     // auto-build on /src changes
     watch: require('./build/config/watch'),
+    // style checker
+    jscs: require('./build/config/jscs'),
     // concatenate js files and create uglify input source
     concat: require('./build/config/concat'),
     // minify

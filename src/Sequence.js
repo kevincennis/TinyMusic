@@ -16,7 +16,7 @@ function Sequence( ac, tempo, arr ) {
 
 // create gain and EQ nodes, then connect 'em
 Sequence.prototype.createFxNodes = function() {
-  var eq = [ [ 'bass', 100 ], [ 'mid', 1000 ] , [ 'treble', 2500 ] ],
+  var eq = [ [ 'bass', 100 ], [ 'mid', 1000 ], [ 'treble', 2500 ] ],
     prev = this.gain = this.ac.createGain();
   eq.forEach(function( config, filter ) {
     filter = this[ config[ 0 ] ] = this.ac.createBiquadFilter();
