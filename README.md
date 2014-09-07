@@ -93,7 +93,7 @@ After the constructor is run, `Note` instances have two properties:
 
 ### Sequence
 
-The `Sequence` prototype accepts 3 arguments, but all are optional:
+The `Sequence` constructor accepts 3 arguments, but all are optional:
 
 `ac` is an `AudioContext` instance. If not provided, one will be created -- but you *really* should provide one.
 `tempo` is a tempo in beats per minute. If not provided, a default tempo of 120 will be set.
