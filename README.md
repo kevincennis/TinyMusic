@@ -5,6 +5,8 @@ A simple, lightweight music synth/sequencer in JavaScript using the Web Audio AP
 
 Here's a quick, hideous [demo](http://jsbin.com/ramerilibubo/14/edit?js,output).
 
+Available on npm via `npm install tinymusic`.
+
 
 ---
 
