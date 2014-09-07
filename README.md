@@ -3,7 +3,7 @@ TinyMusic
 
 A simple, lightweight music synth/sequencer in JavaScript using the Web Audio API.
 
-Here's a quick, hideous [demo](http://jsbin.com/ramerilibubo/3/edit).
+Here's a quick, hideous [demo](http://jsbin.com/ramerilibubo/14/edit?js,output).
 
 
 ---
