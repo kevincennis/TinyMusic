@@ -1,5 +1,5 @@
 {
-  "name": "TinyMusic",
+  "name": "tinymusic",
   "version": "0.0.1",
   "description": "A simple, lightweight music sequencer in JavaScript using the Web Audio API.",
   "main": "./index.js",
