@@ -58,4 +58,4 @@ Note.getDuration = function( symbol ) {
     }, 0 );
 };
 
-typeof module !== 'undefined' && (module.exports = Note);
+typeof module !== 'undefined' && ( module.exports = Note );
