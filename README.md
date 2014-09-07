@@ -1,6 +1,8 @@
 TinyMusic
 =========
 
+[![Built Status](https://travis-ci.org/kevincennis/TinyMusic.svg?branch=master)](https://travis-ci.org/kevincennis/TinyMusic)
+
 A simple, lightweight music synth/sequencer in JavaScript using the Web Audio API.
 
 Here's a quick, hideous [demo](http://jsbin.com/ramerilibubo/14/edit?js,output).
@@ -120,7 +122,7 @@ There's too much to fully cover it here, but basically:
 ```js
 var sequence = new Sequence();
 
-// the double "gain" isn't a typo. the GainNode instance has a property 
+// the double "gain" isn't a typo. the GainNode instance has a property
 // called "gain", which has a "value" that you can set
 sequence.gain.gain.value = 0.5; // half volume
 ```
@@ -189,7 +191,7 @@ var ac = new AudioContext(),
     'A3  e',
     'F3  e',
     'G3  e',
- 
+
     'E3  e',
     'F3  e',
     'G3  e',
@@ -197,7 +199,7 @@ var ac = new AudioContext(),
     'E3  e',
     'F3  e',
     'D3  q',
- 
+
     '-   e',
     'Bb3 s',
     'A3  s',
@@ -207,7 +209,7 @@ var ac = new AudioContext(),
     'G3  e',
     'F3  e',
     'G3  e',
- 
+
     'E3  e',
     'F3  e',
     'G3  e',
@@ -226,7 +228,7 @@ var ac = new AudioContext(),
     'C4  e',
     'A3  e',
     'Bb3 e',
- 
+
     'G3  e',
     'A3  e',
     'Bb3 e',
@@ -234,7 +236,7 @@ var ac = new AudioContext(),
     'G3  e',
     'A3  e',
     'F3  q',
- 
+
     '-   e',
     'D4  s',
     'C4  s',
@@ -244,7 +246,7 @@ var ac = new AudioContext(),
     'Bb3 e',
     'A3  e',
     'Bb3 e',
- 
+
     'G3  e',
     'A3  e',
     'Bb3 e',
@@ -258,19 +260,19 @@ var ac = new AudioContext(),
     'D3  q',
     '-   h',
     'D3  q',
- 
+
     'A2  q',
     '-   h',
     'A2  q',
- 
+
     'Bb2 q',
     '-   h',
     'Bb2 q',
- 
+
     'F2  h',
     'A2  h'
   ];
- 
+
 // create 3 new sequences (one for lead, one for harmony, one for bass)
 sequence1 = new Sequence( ac, tempo, lead );
 sequence2 = new Sequence( ac, tempo, harmony );
@@ -281,12 +283,12 @@ sequence1.staccato = 0.55;
 sequence2.staccato = 0.55;
 sequence3.staccato = 0.05;
 sequence3.smoothing = 0.4;
- 
+
 // adjust the levels so the bass and harmony aren't too loud
 sequence1.gain.gain.value = 1.0;
 sequence2.gain.gain.value = 0.8;
 sequence3.gain.gain.value = 0.65;
- 
+
 // apply EQ settings
 sequence1.mid.frequency.value = 800;
 sequence1.mid.gain.value = 3;
