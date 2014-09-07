@@ -9,6 +9,10 @@ module.exports = function( grunt ) {
     concat: require('./build/config/concat'),
     // minify
     uglify: require('./build/config/uglify'),
+    // test server
+    connect: require('./build/config/connect'),
+    // tests
+    mocha_phantomjs: require('./build/config/mocha'),
     // compare size of generated files
     compare_size: require('./build/config/comparesize')
   });

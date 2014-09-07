@@ -60,6 +60,8 @@ Note.getDuration = function( symbol ) {
     }, 0 );
 };
 
+typeof module !== 'undefined' && ( module.exports = Note );
+
 /*
  * Sequence class
  */
@@ -182,6 +184,8 @@ Sequence.prototype.stop = function() {
   }
   return this;
 };
+
+typeof module !== 'undefined' && ( module.exports = Sequence );
 
 global.Note = Note;
 global.Sequence = Sequence;
