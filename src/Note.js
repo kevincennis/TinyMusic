@@ -57,3 +57,5 @@ Note.getDuration = function( symbol ) {
         curr === 's' ? 0.25 : 0 );
     }, 0 );
 };
+
+typeof module !== 'undefined' && (module.exports = Note);

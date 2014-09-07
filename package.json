@@ -2,7 +2,7 @@
   "name": "TinyMusic",
   "version": "0.0.1",
   "description": "A simple, lightweight music sequencer in JavaScript using the Web Audio API.",
-  "main": "Gruntfile.js",
+  "main": "./index.js",
   "scripts": {
     "test": "grunt"
   },
