@@ -111,22 +111,7 @@ Sequence.prototype.createCustomWave = function( real, imag ) {
   this.waveType = 'custom';
 
   // Reset customWave
-  this.customWave = [];
-
-  var len,
-      f;
-
-  [ real, imag ].forEach( function( set ) {
-    len = set.length;
-    f = new Float32Array( len );
-
-    set.forEach(function( val, index ) {
-      f[ index ] = val;
-    });
-
-    this.customWave.push( f );
-
-  }.bind( this ));
+  this.customWave = [ new Float32Array( real ), new Float32Array( imag ) ];
 };
 
 // recreate the oscillator node (happens on every play)
