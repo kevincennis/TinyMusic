@@ -12,6 +12,17 @@ describe( 'Sequence', function(){
 
   });
 
+  describe( 'createCustomWave()', function() {
+    it( 'should set "waveType" property of Sequence instance to "custom"', function() {
+      var fixture = {
+        waveType: "square"
+      };
+
+      Sequence.prototype.createCustomWave.call( fixture , [ -0.8, 1, 0.8, 0.8, -0.8, -0.8, -1 ]);
+      assert.equal( fixture.waveType, "custom" );
+    });
+  });
+
   describe( 'push()', function() {
 
     it( 'should accept strings', function() {

@@ -100,11 +100,49 @@ Sequence.prototype.push = function() {
   return this;
 };
 
+// create a custom waveform as opposed to "sawtooth", "triangle", etc
+Sequence.prototype.createCustomWave = function( real, imag ) {
+  // Allow user to specify only one array and dupe it for imag.
+  if ( !imag ) {
+    imag = real;
+  }
+
+  // Wave type must be custom to apply period wave.
+  this.waveType = 'custom';
+
+  // Reset customWave
+  this.customWave = [];
+
+  var len,
+      f;
+
+  [ real, imag ].forEach( function( set ) {
+    len = set.length;
+    f = new Float32Array( len );
+
+    set.forEach(function( val, index ) {
+      f[ index ] = val;
+    });
+
+    this.customWave.push( f );
+
+  }.bind( this ));
+};
+
 // recreate the oscillator node (happens on every play)
 Sequence.prototype.createOscillator = function() {
   this.stop();
   this.osc = this.ac.createOscillator();
   this.osc.type = this.waveType || 'square';
+
+  // customWave should be an array of Float32Arrays. The more elements in
+  // each Float32Array, the dirtier (saw-like) the wave is
+  if ( this.customWave ) {
+    this.osc.setPeriodicWave(
+      this.ac.createPeriodicWave.apply( this.ac, this.customWave )
+    );
+  }
+
   this.osc.connect( this.gain );
   return this;
 };
