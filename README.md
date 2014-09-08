@@ -152,6 +152,27 @@ Same as `Sequence.bass`, but focuses on higher frequencies (2500Hz by default)
 
 The `waveType` property defines what kind of oscillator the sequence will use. By default, oscillators use `'square'` waves because they sound totally fucking awesome. You can also use `'sine'`, `'sawtooth'`, or `'triangle'`.
 
+#### Sequence.createCustomWave(real, imaginary)
+
+Creates a custom waveType to use with `Sequence.waveType = 'custom'`. This will create and set a [periodicWaveForm](https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode.setPeriodicWave) on the sequencer's OscillatorNode. `real` and `imaginary` should both be Arrays (they will be converted to Float32Array) and they must be the same length, or the AudioContext will generate an error. If no value is supplied for `imaginary`, `real` will be duplicated.
+
+```js
+var sequence = new Sequence(ac, tempo, harmony);
+sequence.play();
+
+// An electric piano/organy (The Doors-ish) sound
+sequence.createCustomWave([-0.8, 1, 0.8, 0.8, -0.8, -0.8, -1]);
+
+// A soft, sine-like wave (a little grittier than plain "sine")
+sequence.createCustomWave([-1,0,1,0,-1,0,1]);
+
+// A bit grittier, sounds a little more like a horn
+sequence.createCustomWave([-1,1,-1,1,-1,1],[1,0,1,0,1,0]);
+
+// Trumpety
+sequence.createCustomWave([-1,-0.9,-0.6,-0.3, 0, 0.3, 0.6, 0.9,1]);
+```
+
 #### Sequence.prototype.push()
 
 The `push()` method accepts any number of `Note` instances (or "note strings" that can be passed to the `Note` constructor) and adds them to the sequence.
