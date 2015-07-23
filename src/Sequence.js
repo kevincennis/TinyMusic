@@ -54,7 +54,6 @@ Sequence.prototype.createCustomWave = function( real, imag ) {
 Sequence.prototype.createOscillator = function() {
   this.stop();
   this.osc = this.ac.createOscillator();
-  this.osc.type = this.waveType || 'square';
 
   // customWave should be an array of Float32Arrays. The more elements in
   // each Float32Array, the dirtier (saw-like) the wave is
@@ -62,6 +61,8 @@ Sequence.prototype.createOscillator = function() {
     this.osc.setPeriodicWave(
       this.ac.createPeriodicWave.apply( this.ac, this.customWave )
     );
+  } else {
+    this.osc.type = 'square';
   }
 
   this.osc.connect( this.gain );
