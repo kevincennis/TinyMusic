@@ -4,3 +4,4 @@ test/shims.js
 .DS_Store
 *.sizecache.json
 *.log
+.idea/
