@@ -62,7 +62,7 @@ Sequence.prototype.createOscillator = function() {
       this.ac.createPeriodicWave.apply( this.ac, this.customWave )
     );
   } else {
-    this.osc.type = 'square';
+    this.osc.type = this.waveType || 'square';
   }
 
   this.osc.connect( this.gain );
