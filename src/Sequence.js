@@ -138,8 +138,7 @@ Sequence.prototype.play = function( when ) {
 Sequence.prototype.stop = function() {
   if ( this.osc ) {
     this.osc.onended = null;
-    this.osc.stop( 0 );
-    this.osc.frequency.cancelScheduledValues( 0 );
+    this.osc.disconnect();
     this.osc = null;
   }
   return this;
