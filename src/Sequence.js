@@ -143,5 +143,3 @@ Sequence.prototype.stop = function() {
   }
   return this;
 };
-
-typeof module !== 'undefined' && ( module.exports = Sequence );

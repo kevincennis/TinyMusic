@@ -1,4 +1,12 @@
-(function( global ) {
+(function ( root, factory ) {
+  if ( typeof define === 'function' && define.amd ) {
+    define( [ 'exports' ], factory );
+  } else if ( typeof exports === 'object' && typeof exports.nodeName !== 'string' ) {
+    factory( exports );
+  } else {
+    factory( root.TinyMusic = {} );
+  }
+}( this, function ( exports ) {
 
 /*
  * Private stuffz
@@ -59,8 +67,6 @@ Note.getDuration = function( symbol ) {
         curr === 's' ? 0.25 : 0 );
     }, 0 );
 };
-
-typeof module !== 'undefined' && ( module.exports = Note );
 
 /*
  * Sequence class
@@ -208,9 +214,6 @@ Sequence.prototype.stop = function() {
   return this;
 };
 
-typeof module !== 'undefined' && ( module.exports = Sequence );
-
-global.Note = Note;
-global.Sequence = Sequence;
-
-}( typeof window !== 'undefined' ? window : this ) );
+  exports.Note = Note;
+  exports.Sequence = Sequence;
+}));

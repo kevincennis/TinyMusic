@@ -1,4 +1,3 @@
-global.Note = Note;
-global.Sequence = Sequence;
-
-}( typeof window !== 'undefined' ? window : this ) );
+  exports.Note = Note;
+  exports.Sequence = Sequence;
+}));
