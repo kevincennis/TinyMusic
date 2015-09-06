@@ -1,10 +1,11 @@
 {
   "name": "tinymusic",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "A simple, lightweight music sequencer in JavaScript using the Web Audio API.",
-  "main": "./index.js",
+  "main": "./dist/TinyMusic.js",
   "scripts": {
-    "test": "grunt"
+    "test": "grunt",
+    "prepublish": "grunt"
   },
   "repository": {
     "type": "git",
