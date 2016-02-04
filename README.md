@@ -84,7 +84,7 @@ sequence.play();
 
 ### Note
 
-The `Note` constructor only acceps one argument: a string that dictates note frequency and duration. An example input string might look like `'A4 q'`.
+The `Note` constructor only accepts one argument: a string that dictates note frequency and duration. An example input string might look like `'A4 q'`.
 
 In that example, `'A4'` refers to the frequency 440Hz ([more on that here](http://www.phy.mtu.edu/~suits/notefreqs.html)), and `'q'` means "quarter note".
 
@@ -121,7 +121,7 @@ The `loop` property is a boolean value that controls whether or not the sequence
 
 #### Sequence.smoothing
 
-The `smoothing` property controls portamento (smoothily sliding from one frequency to the next). The `smoothing` value should be a number between `0` (no smoothing) to `1` (lots of smoothing). The default value is `0`.
+The `smoothing` property controls portamento (smoothly sliding from one frequency to the next). The `smoothing` value should be a number between `0` (no smoothing) to `1` (lots of smoothing). The default value is `0`.
 
 #### Sequence.staccato
 
